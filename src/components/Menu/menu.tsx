@@ -22,10 +22,20 @@ interface IMenuContext {
   mode?: MenuMode;
   defaultOpenSubMenus?: string[];
 }
+
 export const MenuContext = createContext<IMenuContext>({
   index: '0'
 });
-const Menu: React.FC<MenuProps> = (props) => {
+
+/**
+ * 支持横向以及纵向的展示
+ * ### 引用方法
+ *
+ * ~~~js
+ * import { Menu } from 'fireship'
+ * ~~~
+ */
+export const Menu: React.FC<MenuProps> = (props) => {
   const {
     className,
     mode,

@@ -5,13 +5,13 @@ import { MenuContext } from './menu';
 import { MenuItemProps } from './menuItem';
 import Icon from '../Icon/icon';
 
-export interface SubMenuPros {
+export interface SubMenuProps {
   index?: string;
   title: string;
   className?: string;
 }
 
-const SubMenu: React.FC<SubMenuPros> = ({
+const SubMenu: React.FC<SubMenuProps> = ({
   index,
   title,
   children,
