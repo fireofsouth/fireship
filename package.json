@@ -36,7 +36,6 @@
   "scripts": {
     "start": "react-scripts start",
     "clean": "rimraf ./dist",
-    "hhh": "rimraf ./node_modulesst",
     "build": "npm run clean && npm run build-ts && npm run build-css",
     "lint": "eslint --ext js,ts,tsx src --max-warnings 5",
     "test": "react-scripts test",
